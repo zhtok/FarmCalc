@@ -237,6 +237,7 @@ function calculate() {
     if (useFert) {
         msg += `\n🧪 施肥最优：${getCropEmoji(bestFert.name)} ${bestFert.name}（${bestFert.expPerHourFert.toFixed(2)} exp/h · ↑${bestFert.gainPercent.toFixed(1)}%）`;
     }
+    msg += `\n⚠️ 多季作物的计算方式暂未确定，结果仅供参考`;
     showToast(msg);
 }
 
